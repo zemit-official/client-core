@@ -1,0 +1,18 @@
+.zm-form {
+	position: relative;
+
+	&.is-loading {
+
+		.zm-loader {
+			.zm-loader-content {
+				opacity: 0.5;
+			}
+		}
+
+		& > *:not(.zm-loader) {
+			opacity: 0.5;
+			pointer-events: none;
+			user-select: none;
+		}
+	}
+}

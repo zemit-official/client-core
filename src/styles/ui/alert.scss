@@ -1,0 +1,14 @@
+@import "../base/configs";
+
+.zm-alert {
+	border-radius: $small-size / 4;
+
+	.zm-alert-content {
+		padding: $small-size;
+	}
+
+	&.zm-alert-danger {
+		background-color: $danger-color;
+		color: white;
+	}
+}

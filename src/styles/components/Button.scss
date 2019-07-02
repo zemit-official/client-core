@@ -1,0 +1,80 @@
+@import "../base/configs";
+
+.zm-button {
+	background-color: $main-color-bg;
+	border: $main-color-bg solid 1px;
+	color: $main-color-text;
+	font-size: 1rem;
+	cursor: pointer;
+	padding: 0;
+	border-radius: 0.25rem;
+	transition: background-color 300ms ease, border-color 300ms ease, color 300ms ease;
+
+	&:focus {
+		outline: 0;
+		border-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.container {
+		overflow: hidden;
+		position: relative;
+		padding: $small-size;
+		background-color: rgba(255, 255, 255, 0);
+		transition: background-color 300ms ease;
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+	}
+
+	.ripple {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 10px;
+		height: 10px;
+		margin-left: -5px;
+		margin-top: -5px;
+		background: #ffffff;
+		opacity: 0;
+		border-radius: 5px;
+	}
+
+	//&.animate {
+	//	animation-name: pulseEffect;
+	//	animation-duration: 600ms;
+	//}
+
+	&.animate .ripple {
+		animation-name: rippleEffect;
+		animation-duration: 2000ms;
+		pointer-events: none;
+	}
+}
+
+//@keyframes pulseEffect {
+//	0% {
+//		transform: perspective(1rem) translateZ(0);
+//	}
+//	50% {
+//		transform: perspective(1rem) translateZ(-0.1rem);
+//	}
+//	100% {
+//		transform: perspective(1rem) translateZ(0);
+//	}
+//}
+
+@keyframes rippleEffect {
+	0% {
+		transform: scale(1);
+		opacity: 0.2;
+	}
+	50% {
+		transform: scale(150);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(300);
+	}
+}

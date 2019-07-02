@@ -1,0 +1,19 @@
+{
+	"zemit.emailAddress": "Adresse courriel",
+	"zemit.password": "Mot de passe",
+	"zemit.confirm": "Confirmation",
+	"zemit.password.strength-bad": "Mauvais",
+	"zemit.password.strength-good": "Bon",
+	"zemit.password.strength-great": "Génial",
+
+	"zemit.form.defaultErrMsg": "Veuillez vérifier votre formulaire et soumettre à nouveau.",
+
+	"zemit.validation.emailErr": "L'adresse courriel est invalide",
+	"zemit.validation.notEmptyErr": "Ce champ ne peut être vide",
+	"zemit.validation.isBooleanErr": "Ce champ doit contenir une valeur de type booléen",
+	"zemit.validation.urlErr": "Ce champ doit contenir une URL valide",
+	"zemit.validation.isDateErr": "Ce champ doit contenir un format de date valide",
+	"zemit.validation.isIntegerErr": "Ce champ doit contenir un numéro",
+	"zemit.validation.comparePasswordErr": "Les mots de passes ne correspondent pas",
+	"zemit.validation.passwordScoreErr": "La force du mot de passe n'est pas assez forte",
+}

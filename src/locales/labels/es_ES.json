@@ -1,0 +1,19 @@
+{
+	"zemit.emailAddress": "Dirección de correo electronico",
+	"zemit.password": "Contraseña",
+	"zemit.confirm": "Confirmación",
+	"zemit.password.strength-bad": "Malo",
+	"zemit.password.strength-good": "Bueno",
+	"zemit.password.strength-great": "Genial",
+
+	"zemit.form.defaultErrMsg": "Por favor revise su formulario y envíelo nuevamente.",
+
+	"zemit.validation.emailErr": "La dirección de correo electrónico no es válida",
+	"zemit.validation.notEmptyErr": "Este campo no puede estar vacío",
+	"zemit.validation.isBooleanErr": "Este campo debe contener un valor booleano",
+	"zemit.validation.urlErr": "Este campo debe contener una URL válida",
+	"zemit.validation.isDateErr": "Este campo debe contener un formato de fecha válido",
+	"zemit.validation.isIntegerErr": "Este campo debe contener un número",
+	"zemit.validation.comparePasswordErr": "Las contraseñas no coinciden",
+	"zemit.validation.passwordScoreErr": "La fuerza de la contraseña no es lo suficientemente fuerte"
+}

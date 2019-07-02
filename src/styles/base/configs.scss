@@ -1,0 +1,23 @@
+$main-color-bg: #B5BF23;
+$main-color-text: white;
+$dark-color: #333;
+$small-size: 1rem;
+$medium-size: 2rem;
+$large-size: 3rem;
+
+$breakpoints:
+	xs 0 48em,
+	sm 48em 62em,
+	md 62em 75em,
+	lg 75em 100% !default;
+
+$grid-columns: 12 !default;
+$gutter-width: 1rem !default;
+$outer-margin: 2rem !default;
+$max-width: 1200px !default;
+
+
+$danger-color: #FF1E00;
+$warning-color: #FF8E00;
+$good-color: #072FBE;
+$great-color: $main-color-bg;

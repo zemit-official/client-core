@@ -1,0 +1,19 @@
+{
+	"zemit.emailAddress": "Email address",
+	"zemit.password": "Password",
+	"zemit.confirm": "Confirm",
+	"zemit.password.strength-bad": "Bad",
+	"zemit.password.strength-good": "Good",
+	"zemit.password.strength-great": "Great",
+
+	"zemit.form.defaultErrMsg": "Please check your form and submit again.",
+
+	"zemit.validation.emailErr": "Invalid email address",
+	"zemit.validation.notEmptyErr": "This field must can't be empty",
+	"zemit.validation.isBooleanErr": "This field must contain a boolean value",
+	"zemit.validation.urlErr": "This field must contain a valid URL",
+	"zemit.validation.isDateErr": "This field must contain a valid date format",
+	"zemit.validation.isIntegerErr": "This field must contain a number",
+	"zemit.validation.comparePasswordErr": "The passwords do not match",
+	"zemit.validation.passwordScoreErr": "The password strength is not strong enough"
+}

@@ -1,0 +1,39 @@
+@mixin breakpointMinSize($maxWidth, $withMedia) {
+
+	@if $withMedia {
+		@media all and (min-width: $maxWidth) {
+			@content;
+		}
+	}
+	@else {
+		@content;
+	}
+}
+
+@mixin absFullMiddle() {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@mixin breakpointMinMaxSize($minSize, $maxWidth) {
+
+	@media all and (min-width: $minSize) and (max-width: $maxWidth) {
+		@content;
+	}
+}
+
+@mixin breakpointMaxSize($maxWidth, $withMedia) {
+
+	@if $withMedia {
+		@media all and (max-width: $maxWidth) {
+			@content;
+		}
+	}
+	@else {
+		@content;
+	}
+}

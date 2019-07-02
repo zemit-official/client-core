@@ -1,0 +1,21 @@
+@import "../base/configs";
+
+.zm-progress-bar {
+
+	position: relative;
+	border-radius: 0.25rem;
+	border: rgba(0, 0, 0, 0.1) solid 1px;
+	transition: border-color 300ms ease;
+	background-color: rgba(0, 0, 0, 0.025);
+
+	.zm-progress-bar-percent {
+		border-radius: 0.25rem;
+		min-height: $small-size / 2;
+		transition: width 300ms ease, background-color 300ms ease;
+		text-align: center;
+	}
+
+	.zm-progress-bar-percent.default {
+		background-color: $main-color-bg;
+	}
+}

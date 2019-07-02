@@ -1,0 +1,15 @@
+@import "../base/configs";
+
+.zm-clickable-zone {
+	padding: ($small-size / 2);
+	transition: background-color 300ms ease;
+	border-radius: 0.25rem;
+
+	&.zm-clickable-onclick {
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+	}
+}

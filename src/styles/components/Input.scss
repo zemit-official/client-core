@@ -1,0 +1,181 @@
+@import "../base/configs";
+
+.zm-input {
+
+	position: relative;
+	border-radius: 0.25rem;
+	border: rgba(0, 0, 0, 0.1) solid 1px;
+	transition: border-color 300ms ease;
+	cursor: text;
+	background-color: rgba(0, 0, 0, 0.025);
+
+	.zm-input-content {
+
+		user-select: none;
+
+		label {
+			margin: 0 $small-size;
+			width: 15rem;
+			text-transform: uppercase;
+			font-weight: 600;
+			opacity: 0.5;
+			line-height: 1rem;
+		}
+
+		.material-icons {
+			margin: 0 $small-size;
+		}
+
+		input:not([type="button"]),
+		input:not([type="radio"]),
+		input:not([type="checkbox"]) {
+			padding: $small-size;
+			border-radius: 0.25rem;
+			border: 0;
+			font-size: 1rem;
+			width: 100%;
+			transition: background-color 300ms ease;
+			background-color: transparent;
+
+			&:focus {
+				outline: 0;
+				background-color: white;
+			}
+		}
+	}
+
+	&.validation-error {
+
+		border-color: $danger-color;
+
+		.validation-button i {
+			color: $danger-color;
+			transform: scale(0.5);
+			animation: validationError 3s ease infinite;
+		}
+
+		.password-strength {
+
+			.zm-progress-bar {
+				border-bottom: 0;
+				border-left: 0;
+				border-right: 0;
+				border-radius: 0 0 0.25rem 0;
+
+				.zm-progress-bar-percent {
+					border-radius: 0 0.25rem 0.25rem 0;
+				}
+
+				&.complete .zm-progress-bar-percent {
+					border-radius: 0;
+				}
+			}
+		}
+	}
+
+	&.validation-success .validation-button i {
+		color: $great-color;
+	}
+
+	.zm-input-label,
+	.zm-input-icon,
+	.zm-clickable-zone {
+		background-color: white;
+		border-radius: 0;
+	}
+
+	.zm-input-label {
+		background-color: transparent;
+	}
+
+	.zm-input-icon,
+	.zm-clickable-zone:first-child {
+		border-radius: 0.25rem 0 0 0.25rem;
+	}
+
+	.zm-clickable-zone:last-child {
+		border-radius: 0 0.25rem 0.25rem 0;
+	}
+
+	.zm-clickable-zone.exit-active {
+		background-color: transparent;
+	}
+
+	.password-strength {
+
+		.zm-progress-bar {
+			border: 0;
+			border-radius: 0 0 0.25rem 0.25rem;
+
+			.zm-progress-bar-percent {
+				border-radius: 0 0.25rem 0.25rem 0.25rem;
+				color: white;
+				font-size: 0.6rem;
+				line-height: 0.8rem;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+
+			&.complete .zm-progress-bar-percent {
+				border-radius: 0 0 0.25rem 0.25rem;
+			}
+		}
+	}
+
+	&.zm-focus:not(.validation-error):not(.validation-success) {
+		border-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.zm-validation-msg {
+
+		background-color: rgba(255, 0, 0, 0.05);
+		color: $danger-color;
+		font-size: 0.8rem;
+
+		& > .zm-animation-height-container {
+			padding: $small-size / 2;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		.material-icons {
+			margin: 0 0.5rem;
+			margin-right: $small-size * 2;
+		}
+	}
+}
+
+
+@keyframes validationError {
+	0% {
+		transform: scale(1);
+	}
+	35% {
+		transform: scale(1);
+		color: $danger-color;
+	}
+	45% {
+		transform: scale(1.5);
+		color: $warning-color;
+	}
+	55% {
+		transform: scale(1);
+		color: $danger-color;
+	}
+	65% {
+		transform: scale(1.5);
+		color: $warning-color;
+	}
+	75% {
+		transform: scale(1);
+		color: $danger-color;
+	}
+	100% {
+		transform: scale(1);
+	}
+}
